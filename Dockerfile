@@ -1,6 +1,6 @@
 FROM rust
 
-RUN rustup default nightly \
+RUN rustup default beta \
     && apt-get update && apt-get install --yes \
                     wget \
                     cmake \

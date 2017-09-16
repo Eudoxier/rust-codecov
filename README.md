@@ -1,5 +1,7 @@
 # Rust Codecov
 
+![docker](assets/docker.svg) ![Rust](assets/rust.svg) ![Codecov](assets/codecov.svg)
+
 [Official Rust](https://hub.docker.com/_/rust/) with requirements for Codecov. All builds are automated so they are always the most recent images.
 
 ## Usage

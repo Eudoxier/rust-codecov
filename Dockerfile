@@ -10,9 +10,9 @@ RUN rustup default stable \
                     libdw-dev \
                     binutils-dev \
                     libiberty-dev \
-    && apt-get remove --yes wget \
     && rm -rf /var/lib/apt/lists/* \
     && wget https://github.com/SimonKagstrom/kcov/archive/master.tar.gz \
+    && apt-get remove --yes --purge wget \
     && tar xzf master.tar.gz \
     && cd kcov-master \
     && mkdir build \

@@ -1,0 +1,37 @@
+image: docker:git
+services:
+  - docker:dind
+
+stages:
+  - build
+  - release
+
+variables:
+  CONTAINER_TEST_IMAGE: registry.gitlab.com/iron-oxide/docker/rust-codecov:$CI_COMMIT_SHA
+  CONTAINER_RELEASE_IMAGE: registry.gitlab.com/iron-oxide/docker/rust-codecov:$CI_COMMIT_REF_NAME
+
+before_script:
+  - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+
+build:
+  stage: build
+  script:
+    - docker build -t $CONTAINER_TEST_IMAGE .
+    - docker push $CONTAINER_TEST_IMAGE
+  tags:
+    - docker
+    - x86
+
+release-image:
+  stage: release
+  script:
+    - docker pull $CONTAINER_TEST_IMAGE
+    - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
+    - docker push $CONTAINER_RELEASE_IMAGE
+  only:
+    - stable
+    - beta 
+    - nightly
+  tags:
+    - docker
+    - x86

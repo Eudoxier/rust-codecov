@@ -18,9 +18,6 @@ build:
   script:
     - docker build -t $CONTAINER_TEST_IMAGE .
     - docker push $CONTAINER_TEST_IMAGE
-  tags:
-    - docker
-    - x86
 
 release-image:
   stage: release
@@ -32,6 +29,3 @@ release-image:
     - stable
     - beta 
     - nightly
-  tags:
-    - docker
-    - x86

@@ -7,7 +7,7 @@ stages:
   - release
 
 variables:
-  CONTAINER_TEST_IMAGE: registry.gitlab.com/iron-oxide/docker/rust-codecov:$CI_COMMIT_REF_NAME-test
+  CONTAINER_TEST_IMAGE: registry.gitlab.com/iron-oxide/docker/rust-codecov/test:$CI_COMMIT_REF_NAME
   CONTAINER_RELEASE_IMAGE: registry.gitlab.com/iron-oxide/docker/rust-codecov:$CI_COMMIT_REF_NAME
 
 before_script:

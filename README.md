@@ -1,8 +1,8 @@
 # Rust Codecov
 
-<center>
-<img alt="docker" src="http://iron-oxide.gitlab.io/icons/logos/docker.svg" width="100" height="100" /> <img alt="rust" src="http://iron-oxide.gitlab.io/icons/logos/rust.svg" width="100" height="100" /> <img alt="codecov" src="http://iron-oxide.gitlab.io/icons/logos/codecov.svg" width="100" height="100" />
-</center>
+<p align="center">
+    <img alt="docker" src="http://iron-oxide.gitlab.io/icons/logos/docker.svg" width="100" height="100" /> <img alt="rust" src="http://iron-oxide.gitlab.io/icons/logos/rust.svg" width="100" height="100" /> <img alt="codecov" src="http://iron-oxide.gitlab.io/icons/logos/codecov.svg" width="100" height="100" />
+</p>
 
 [Official Rust](https://hub.docker.com/_/rust/) with requirements for Codecov. All builds are automated so they are always the most recent images.
 

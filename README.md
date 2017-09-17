@@ -1,6 +1,6 @@
 # Rust Codecov
 
-![docker](assets/docker.svg) ![Rust](assets/rust.svg) ![Codecov](assets/codecov.svg)
+![docker](http://iron-oxide.gitlab.io/icons/logos/docker.svg) ![Rust](http://iron-oxide.gitlab.io/icons/logos/rust.svg) ![Codecov](http://iron-oxide.gitlab.io/icons/logos/codecov.svg)
 
 [Official Rust](https://hub.docker.com/_/rust/) with requirements for Codecov. All builds are automated so they are always the most recent images.
 

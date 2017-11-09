@@ -1,6 +1,8 @@
 FROM rust
 
 RUN rustup default nightly \
+    && cargo install rustfmt-nightly \
+    && cargo install clippy \
     && apt-get update && apt-get install --yes \
                     wget \
                     cmake \

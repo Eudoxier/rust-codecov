@@ -1,6 +1,6 @@
 # Rust Codecov
 
-[![pipeline status](https://gitlab.com/starshell/docker/rust-codecov/badges/stable/pipeline.svg)](https://gitlab.com/starshell/docker/rust-codecov/commits/stable)[![pipeline status](https://gitlab.com/starshell/docker/rust-codecov/badges/beta/pipeline.svg)](https://gitlab.com/starshell/docker/rust-codecov/commits/beta)[![pipeline status](https://gitlab.com/starshell/docker/rust-codecov/badges/nightly/pipeline.svg)](https://gitlab.com/starshell/docker/rust-codecov/commits/nightly)
+Stable: [![pipeline status](https://gitlab.com/starshell/docker/rust-codecov/badges/stable/pipeline.svg)](https://gitlab.com/starshell/docker/rust-codecov/commits/stable) Beta: [![pipeline status](https://gitlab.com/starshell/docker/rust-codecov/badges/beta/pipeline.svg)](https://gitlab.com/starshell/docker/rust-codecov/commits/beta) Nightly: [![pipeline status](https://gitlab.com/starshell/docker/rust-codecov/badges/nightly/pipeline.svg)](https://gitlab.com/starshell/docker/rust-codecov/commits/nightly)
 
 <p align="center">
     <img alt="docker" src="http://iron-oxide.gitlab.io/icons/logos/docker.svg" width="100" height="100" /> <img alt="rust" src="http://iron-oxide.gitlab.io/icons/logos/rust.svg" width="100" height="100" /> <img alt="codecov" src="http://iron-oxide.gitlab.io/icons/logos/codecov.svg" width="100" height="100" />

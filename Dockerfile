@@ -2,6 +2,7 @@ FROM rust
 
 RUN rustup default nightly \
     && rustup component add rustfmt-preview \
+    && cargo install rustfmt-nightly \
     && cargo install clippy \
     && apt-get update && apt-get install --yes \
                     wget \

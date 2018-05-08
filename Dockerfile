@@ -2,7 +2,6 @@ FROM rust
 
 RUN rustup default beta \
     && rustup component add rustfmt-preview \
-    && cargo install rustfmt \
     && apt-get update && apt-get install --yes \
                     wget \
                     cmake \

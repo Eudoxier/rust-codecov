@@ -1,6 +1,7 @@
 FROM rust
 
 RUN rustup default stable \
+    && rustup component add rustfmt-preview \
     && apt-get update && apt-get install --yes \
                     wget \
                     cmake \

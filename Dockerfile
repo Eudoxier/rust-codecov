@@ -2,7 +2,6 @@ FROM rust
 
 RUN rustup default nightly \
     && rustup component add rustfmt-preview \
-    && cargo install clippy \
     && apt-get update && apt-get install --yes \
                     wget \
                     cmake \
